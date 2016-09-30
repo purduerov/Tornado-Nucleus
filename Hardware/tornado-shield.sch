@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -10150,6 +10150,12 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <sheets>
 <sheet>
 <plain>
+<text x="170.18" y="231.14" size="1.778" layer="97">LED DRIVER</text>
+<text x="180.34" y="160.02" size="1.778" layer="97">Ras-Pi</text>
+<text x="180.34" y="160.02" size="1.778" layer="97">Ras-Pi</text>
+<text x="175.26" y="86.36" size="1.778" layer="97">Linear Reg</text>
+<text x="345.44" y="223.52" size="1.778" layer="97">SOL DRIVER</text>
+<text x="345.44" y="223.52" size="1.778" layer="97">SOL DRIVER</text>
 </plain>
 <instances>
 <instance part="U$2" gate="G$1" x="182.88" y="127"/>
@@ -10429,6 +10435,37 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <pinref part="P+9" gate="1" pin="+12V"/>
 <wire x1="53.34" y1="76.2" x2="35.56" y2="76.2" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="C_F" gate="G$1" pin="1"/>
+<wire x1="200.66" y1="210.82" x2="200.66" y2="215.9" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="215.9" x2="203.2" y2="215.9" width="0.1524" layer="91"/>
+<pinref part="C_IN2" gate="G$1" pin="1"/>
+<wire x1="203.2" y1="215.9" x2="210.82" y2="215.9" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="215.9" x2="215.9" y2="215.9" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="215.9" x2="215.9" y2="213.36" width="0.1524" layer="91"/>
+<pinref part="C_IN1" gate="G$1" pin="1"/>
+<wire x1="215.9" y1="215.9" x2="226.06" y2="215.9" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="215.9" x2="226.06" y2="213.36" width="0.1524" layer="91"/>
+<junction x="215.9" y="215.9"/>
+<wire x1="226.06" y1="215.9" x2="241.3" y2="215.9" width="0.1524" layer="91"/>
+<junction x="226.06" y="215.9"/>
+<wire x1="203.2" y1="215.9" x2="203.2" y2="223.52" width="0.1524" layer="91"/>
+<junction x="203.2" y="215.9"/>
+<pinref part="R_UV2" gate="G$1" pin="2"/>
+<wire x1="203.2" y1="223.52" x2="180.34" y2="223.52" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="215.9" x2="210.82" y2="205.74" width="0.1524" layer="91"/>
+<junction x="210.82" y="215.9"/>
+<pinref part="R_SNS" gate="G$1" pin="2"/>
+<wire x1="210.82" y1="205.74" x2="210.82" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="200.66" x2="208.28" y2="200.66" width="0.1524" layer="91"/>
+<label x="241.3" y="215.9" size="1.778" layer="95"/>
+<pinref part="U2" gate="G$1" pin="VIN"/>
+<wire x1="190.5" y1="215.9" x2="200.66" y2="215.9" width="0.1524" layer="91"/>
+<junction x="200.66" y="215.9"/>
+<pinref part="U2" gate="G$1" pin="CSP"/>
+<wire x1="210.82" y1="205.74" x2="190.5" y2="205.74" width="0.1524" layer="91"/>
+<junction x="210.82" y="205.74"/>
+</segment>
 </net>
 <net name="N$3" class="0">
 <segment>
@@ -10504,39 +10541,6 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <junction x="167.64" y="152.4"/>
 </segment>
 </net>
-<net name="V_IN" class="0">
-<segment>
-<pinref part="C_F" gate="G$1" pin="1"/>
-<wire x1="200.66" y1="210.82" x2="200.66" y2="215.9" width="0.1524" layer="91"/>
-<wire x1="200.66" y1="215.9" x2="203.2" y2="215.9" width="0.1524" layer="91"/>
-<pinref part="C_IN2" gate="G$1" pin="1"/>
-<wire x1="203.2" y1="215.9" x2="210.82" y2="215.9" width="0.1524" layer="91"/>
-<wire x1="210.82" y1="215.9" x2="215.9" y2="215.9" width="0.1524" layer="91"/>
-<wire x1="215.9" y1="215.9" x2="215.9" y2="213.36" width="0.1524" layer="91"/>
-<pinref part="C_IN1" gate="G$1" pin="1"/>
-<wire x1="215.9" y1="215.9" x2="226.06" y2="215.9" width="0.1524" layer="91"/>
-<wire x1="226.06" y1="215.9" x2="226.06" y2="213.36" width="0.1524" layer="91"/>
-<junction x="215.9" y="215.9"/>
-<wire x1="226.06" y1="215.9" x2="241.3" y2="215.9" width="0.1524" layer="91"/>
-<junction x="226.06" y="215.9"/>
-<wire x1="203.2" y1="215.9" x2="203.2" y2="223.52" width="0.1524" layer="91"/>
-<junction x="203.2" y="215.9"/>
-<pinref part="R_UV2" gate="G$1" pin="2"/>
-<wire x1="203.2" y1="223.52" x2="180.34" y2="223.52" width="0.1524" layer="91"/>
-<wire x1="210.82" y1="215.9" x2="210.82" y2="205.74" width="0.1524" layer="91"/>
-<junction x="210.82" y="215.9"/>
-<pinref part="R_SNS" gate="G$1" pin="2"/>
-<wire x1="210.82" y1="205.74" x2="210.82" y2="200.66" width="0.1524" layer="91"/>
-<wire x1="210.82" y1="200.66" x2="208.28" y2="200.66" width="0.1524" layer="91"/>
-<label x="241.3" y="215.9" size="1.778" layer="95"/>
-<pinref part="U2" gate="G$1" pin="VIN"/>
-<wire x1="190.5" y1="215.9" x2="200.66" y2="215.9" width="0.1524" layer="91"/>
-<junction x="200.66" y="215.9"/>
-<pinref part="U2" gate="G$1" pin="CSP"/>
-<wire x1="210.82" y1="205.74" x2="190.5" y2="205.74" width="0.1524" layer="91"/>
-<junction x="210.82" y="205.74"/>
-</segment>
-</net>
 <net name="N$2" class="0">
 <segment>
 <pinref part="R_UV1" gate="G$1" pin="2"/>
@@ -10547,20 +10551,6 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <pinref part="U2" gate="G$1" pin="UVLO"/>
 <wire x1="157.48" y1="215.9" x2="160.02" y2="215.9" width="0.1524" layer="91"/>
 <junction x="157.48" y="215.9"/>
-</segment>
-</net>
-<net name="V_OUT" class="0">
-<segment>
-<pinref part="L2" gate="G$1" pin="2"/>
-<wire x1="223.52" y1="187.96" x2="228.6" y2="187.96" width="0.1524" layer="91"/>
-<wire x1="228.6" y1="187.96" x2="228.6" y2="172.72" width="0.1524" layer="91"/>
-<wire x1="228.6" y1="172.72" x2="134.62" y2="172.72" width="0.1524" layer="91"/>
-<wire x1="134.62" y1="172.72" x2="134.62" y2="200.66" width="0.1524" layer="91"/>
-<pinref part="R_OFF" gate="G$1" pin="1"/>
-<wire x1="134.62" y1="200.66" x2="137.16" y2="200.66" width="0.1524" layer="91"/>
-<wire x1="228.6" y1="187.96" x2="241.3" y2="187.96" width="0.1524" layer="91"/>
-<junction x="228.6" y="187.96"/>
-<label x="241.3" y="187.96" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -10696,9 +10686,16 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <label x="40.64" y="50.8" size="1.9304" layer="95"/>
 </segment>
 <segment>
-<pinref part="R_PD" gate="G$1" pin="1"/>
-<wire x1="144.78" y1="205.74" x2="119.38" y2="205.74" width="0.1524" layer="91"/>
-<label x="114.3" y="205.74" size="1.778" layer="95"/>
+<pinref part="L2" gate="G$1" pin="2"/>
+<wire x1="223.52" y1="187.96" x2="228.6" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="187.96" x2="228.6" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="172.72" x2="134.62" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="134.62" y1="172.72" x2="134.62" y2="200.66" width="0.1524" layer="91"/>
+<pinref part="R_OFF" gate="G$1" pin="1"/>
+<wire x1="134.62" y1="200.66" x2="137.16" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="187.96" x2="241.3" y2="187.96" width="0.1524" layer="91"/>
+<junction x="228.6" y="187.96"/>
+<label x="241.3" y="187.96" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO" class="0">
@@ -10981,6 +10978,13 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <segment>
 <pinref part="CON1" gate="G$2" pin="P$18"/>
 <wire x1="53.34" y1="45.72" x2="48.26" y2="45.72" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="LED_CON" class="0">
+<segment>
+<pinref part="R_PD" gate="G$1" pin="1"/>
+<wire x1="144.78" y1="205.74" x2="119.38" y2="205.74" width="0.1524" layer="91"/>
+<label x="114.3" y="205.74" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
