@@ -1,0 +1,4 @@
+#Eagle Backups Ignore
+*.s#?
+*.b#?
+*.l#?
