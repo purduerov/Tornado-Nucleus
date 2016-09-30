@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="6.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1017,12 +1017,6 @@
 <label x="396.24" y="-81.28" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$23" class="0">
-<segment>
-<pinref part="CON1" gate="G$1" pin="P$14"/>
-<wire x1="431.8" y1="-86.36" x2="439.42" y2="-86.36" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$24" class="0">
 <segment>
 <pinref part="CON1" gate="G$1" pin="P$13"/>
@@ -1225,6 +1219,7 @@
 <segment>
 <pinref part="CON1" gate="G$1" pin="P$15"/>
 <wire x1="431.8" y1="-91.44" x2="439.42" y2="-91.44" width="0.1524" layer="91"/>
+<label x="434.34" y="-91.44" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GPIO6" class="0">
@@ -1273,6 +1268,18 @@
 <segment>
 <pinref part="CON1" gate="G$2" pin="P$18"/>
 <wire x1="406.4" y1="-182.88" x2="401.32" y2="-182.88" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="SONAR_TIMER" class="0">
+<segment>
+<pinref part="BRICKS_COM" gate="G$1" pin="C2"/>
+<wire x1="228.6" y1="-60.96" x2="238.76" y2="-60.96" width="0.1524" layer="91"/>
+<label x="231.14" y="-60.96" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="CON1" gate="G$1" pin="P$14"/>
+<wire x1="431.8" y1="-86.36" x2="439.42" y2="-86.36" width="0.1524" layer="91"/>
+<label x="434.34" y="-86.36" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
