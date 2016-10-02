@@ -10160,7 +10160,7 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <text x="170.18" y="231.14" size="1.778" layer="97">LED DRIVER</text>
 <text x="180.34" y="160.02" size="1.778" layer="97">Ras-Pi</text>
 <text x="180.34" y="160.02" size="1.778" layer="97">Ras-Pi</text>
-<text x="175.26" y="86.36" size="1.778" layer="97">Linear Reg</text>
+<text x="175.26" y="86.36" size="1.778" layer="97">Buck Converter</text>
 <text x="345.44" y="223.52" size="1.778" layer="97">SOL DRIVER</text>
 <text x="345.44" y="223.52" size="1.778" layer="97">SOL DRIVER</text>
 </plain>

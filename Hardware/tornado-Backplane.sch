@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.6.0">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -629,7 +629,7 @@
 <part name="FRAME2" library="frames" deviceset="FRAME_A_L" device=""/>
 <part name="FRAME3" library="frames" deviceset="FRAME_A_L" device=""/>
 <part name="FRAME4" library="frames" deviceset="FRAME_A_L" device=""/>
-<part name="IO_PUMP?" library="Connectors" deviceset="MICRO-FIT-4-SMD" device="" technology="-PART"/>
+<part name="IO_PUMP" library="Connectors" deviceset="MICRO-FIT-4-SMD" device="" technology="-PART"/>
 <part name="SOLENOID_SWITCH" library="Connectors" deviceset="MICRO-FIT-4-SMD" device="" technology="-PART"/>
 <part name="EMPTY" library="Connectors" deviceset="MICRO-FIT-4-SMD" device="" technology="-PART"/>
 <part name="MAIN_CAMERA" library="Connectors" deviceset="MICRO-FIT-4-SMD" device="" technology="-PART"/>
@@ -669,7 +669,7 @@
 <instance part="FRAME3" gate="G$2" x="452.12" y="0"/>
 <instance part="FRAME4" gate="G$1" x="0" y="-215.9"/>
 <instance part="FRAME4" gate="G$2" x="172.72" y="-215.9"/>
-<instance part="IO_PUMP?" gate="G$1" x="68.58" y="-167.64" rot="R90"/>
+<instance part="IO_PUMP" gate="G$1" x="68.58" y="-167.64" rot="R90"/>
 <instance part="SOLENOID_SWITCH" gate="G$1" x="139.7" y="-43.18" rot="R90"/>
 <instance part="EMPTY" gate="G$1" x="139.7" y="-60.96" rot="R90"/>
 <instance part="MAIN_CAMERA" gate="G$1" x="149.86" y="-149.86" rot="R90"/>
@@ -729,7 +729,7 @@
 <wire x1="406.4" y1="-152.4" x2="388.62" y2="-152.4" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="IO_PUMP?" gate="G$1" pin="C1"/>
+<pinref part="IO_PUMP" gate="G$1" pin="C1"/>
 <wire x1="76.2" y1="-170.18" x2="96.52" y2="-170.18" width="0.1524" layer="91"/>
 <label x="78.74" y="-170.18" size="1.9304" layer="95"/>
 </segment>
@@ -741,7 +741,7 @@
 <label x="78.74" y="-127" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IO_PUMP?" gate="G$1" pin="C3"/>
+<pinref part="IO_PUMP" gate="G$1" pin="C3"/>
 <wire x1="76.2" y1="-165.1" x2="96.52" y2="-165.1" width="0.1524" layer="91"/>
 <label x="78.74" y="-165.1" size="1.778" layer="95"/>
 </segment>
@@ -877,7 +877,7 @@
 <label x="160.02" y="-149.86" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="IO_PUMP?" gate="G$1" pin="C4"/>
+<pinref part="IO_PUMP" gate="G$1" pin="C4"/>
 <wire x1="76.2" y1="-162.56" x2="96.52" y2="-162.56" width="0.1524" layer="91"/>
 <label x="78.74" y="-162.56" size="1.778" layer="95"/>
 </segment>
@@ -940,7 +940,7 @@
 </net>
 <net name="GPIO" class="0">
 <segment>
-<pinref part="IO_PUMP?" gate="G$1" pin="C2"/>
+<pinref part="IO_PUMP" gate="G$1" pin="C2"/>
 <wire x1="76.2" y1="-167.64" x2="96.52" y2="-167.64" width="0.1524" layer="91"/>
 <label x="78.74" y="-167.64" size="1.778" layer="95"/>
 </segment>
